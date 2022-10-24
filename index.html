@@ -11,6 +11,49 @@
 
 <body>
 
+    <form>
+        <input type="text" placeholder="E-mail" id="userMail">
+        <label for="userMail">Write your E-mail here</label>
+        <button class="submitButton" onclick="signUp(); return false">Sign Up</button>
+        <button class="submitButton" onclick="logIn(); return false">Log In</button>
+        <button class="submitButton" onclick="hackMail(); return false">Hack The Mailing List</button>
+    </form>
+
+    <div>
+        <ul id="mailingList">
+
+        </ul>
+    </div>
+    <div >
+        <h3 id="hackMe"></h3>
+    </div>
+    <div >
+        <h3 id="checkLogIn"></h3>
+    </div>
+    
+
+
+    <h2>Ti stai annoiando? gioca contro il computer!</h2>
+    <button class="submitButton" onclick="diceGame(); return false">PLAY</button>
+    <button class="submitButton" onclick="scoreCheck(); return false">Check the score</button>
+    
+    <div>
+        <h3>Your number is:</h3>
+        <h4 id="userNum"></h4>
+    </div>
+    <div>
+        <h3>PC number is:</h3>
+        <h4 id="pcNum"></h4>
+    </div>
+    <div>
+        <h3 id="result"></h3>
+        <h1 id="whoWon"></h1>
+    </div>
+    <div>
+        <h6 id="score"></h6>
+
+    </div>
+    
 
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
